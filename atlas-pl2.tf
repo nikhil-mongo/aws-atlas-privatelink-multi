@@ -1,6 +1,6 @@
 resource "aws_vpc_endpoint" "ptfe_service2" {
   vpc_id             = aws_vpc.primary.id
-  service_name       = mongodbatlas_privatelink_endpoint.atlasplonly.endpoint_service_name
+  service_name       = mongodbatlas_privatelink_endpoint.atlaspl.endpoint_service_name
   vpc_endpoint_type  = "Interface"
   subnet_ids         = [aws_subnet.primary-az1.id, aws_subnet.primary-az2.id]
   security_group_ids = [aws_security_group.primary_default.id]
