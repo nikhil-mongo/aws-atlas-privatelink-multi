@@ -45,7 +45,6 @@ $ terraform plan
 ```
 This project currently does the below deployments:
 
-- MongoDB cluster - M10
 - AWS Custom VPC, Internet Gateway, Route Tables, Subnets with Public and Private access
 - Mutliple PrivateLink Connection at MongoDB Atlas
 - Create VPC Endpoint in AWS
